@@ -1,0 +1,103 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 5px auto;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #b2beb5;
+    margin: 7px;
+}
+
+a:hover {
+  border-bottom: 3px solid #b2beb5;
+  padding-bottom: 5px;
+}
+
+.content {
+  position: relative;
+  top: 40vh;
+}
+
+.content-header {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.content-p {
+    color: #b2beb5;
+}
+
+.buttons {
+    position: relative;
+    top: 43vh;
+    left: 20vw;
+    width: 30vw;
+}
+
+button {
+    height: 35px;
+    width: 135px;
+    border: 0 solid #fff;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background: #b2beb5;
+    color: #fff;
+}
+
+.btn-2 {
+    background: transparent;
+    border: 1px solid #b2beb5;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(.98);
+}
+
+/* media query */
+@media (max-width:840px ) {
+    .container {
+        max-width: 90vw;
+    }
+
+    .button {
+        max-width: 50vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
